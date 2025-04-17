@@ -30,7 +30,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #3e4d3e;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: #090a09;
 }
 .form .message {
   margin: 15px 0 0;
@@ -89,7 +89,7 @@
   color: #EF3B3A;
 }
 .login-page {
-    background: url("C:\Users\Riyan mohammed\Downloads\Bank_image.jpg") no-repeat center center fixed;
+    background: url("Index\218350289.png") no-repeat center center fixed;
     background-size: cover;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -98,7 +98,7 @@
   .bank_name {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
-    color: #1aa665;
+    color: #0e0f0e;
     text-align: center;
     margin-top: 20%;
   }
