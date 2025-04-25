@@ -1,32 +1,32 @@
 <head>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
 </head>
 <div class="checking"></div>
 <div class="login-page">
-    <div style="padding: 1ch;", class="Bank-Name">
+    <div style="padding: 1ch;" , class="Bank-Name">
         <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">Bridge Bank Of India</h1>
     </div>
-       
+
     <div class="form">
-      <form class="register-form">
-        <input type="text" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
-        <button>create</button>
-        <p class="message">Already registered? <a href="#">Sign In</a></p>
-      </form>
-      
-      <form class="login-form">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <button>login</button>
-        <p class="message">Not registered? <a href="#">Create an account</a></p>
-      </form>
-      <div class="intro">
-        
-        <h3>Welcome to the Bridge Bank Of India</h3>
-        <p>We are here to help you manage your finances with ease and convenience.</p>
-        <p>Our online banking services allow you to access your accounts, transfer funds, pay bills, and much more from the comfort of your home.</p>
-    </div> 
+        <form class="register-form">
+            <input type="text" placeholder="name" />
+            <input type="password" placeholder="password" />
+            <input type="text" placeholder="email address" />
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+
+        <form class="login-form" action="/login" method="POST">
+            <input type="text" name="username" placeholder="username" />
+            <input type="password" name="password" placeholder="password" />
+            <button type="submit">login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+        <div class="intro">
+
+            <h3>Welcome to the Bridge Bank Of India</h3>
+            <p>We are here to help you manage your finances with ease and convenience.</p>
+            <p>Our online banking services allow you to access your accounts, transfer funds, pay bills, and much more from the comfort of your home.</p>
+        </div>
     </div>
-  </div>
+</div>
